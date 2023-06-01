@@ -1,0 +1,182 @@
+body{
+    background-color: #e8d5e2 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu' ,sans-serif;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+.text{
+    color: darkred;
+    font-family: cursive;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 35px;
+    padding:0px 8px ;
+}
+.container{
+    min-height: 70vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.bottom{
+    position: sticky;
+    height: 75px;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#currenttime{
+    position: absolute;
+    left: 209px;
+    top: 8px;
+}
+#songtime{
+    position: absolute;
+    right: 209px;
+    top: 8px;
+}
+#progressbar{
+    width: 60vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin: 20px 0px;
+}
+.songitem{
+    height: 60px;
+    width: 35vw;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 80m%; */
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(207 172 188);
+}
+.songitem img{
+    width: 50px;
+    height: 50px;
+    margin: 23px 5px;
+    border-radius: 40px;
+}
+.timestamp{
+    margin: 0px 10px;
+}
+.songlistplay i{
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+.songinfo{
+    position: absolute;
+    left: 5vw;
+}
+
+.sound{
+    position: absolute;
+    right: 5vw;
+    bottom: 3vh;
+}
+#volume{
+    font-size: 20px;
+    cursor: pointer;
+    /* bottom: 10vh; */
+}
+.sound i{
+    cursor: pointer;
+}
+
+@media (max-width:980px){
+    .songitemcontainer {
+        margin: 0px 0px;
+    }
+    .songitem {
+        width: 60vw;
+        display: flex;
+    }
+    #currenttime {
+        left: 190px;
+    }
+    #progressbar {
+        width: 40vw;
+    }
+    #songtime {
+        right: 195px;
+   }
+}
+@media (max-width:420px){
+    .container {
+        width: 100%;
+    }
+    .songitem {
+        height: 60px;
+        width: 90vw;
+    }
+    .bottom {
+        height: 150px;
+        bottom: 0;
+        display: flex;
+    }
+    #currenttime {
+        position: absolute;
+        left: 35px;
+        top: 45px;
+    }
+    #songtime {
+        position: absolute;
+        right: 45px;
+        top: 45px;
+    }
+    #mastersongname{
+        position: relative;
+        top: 50px;
+    }
+    .sound {
+        position: absolute;
+        top: 120px;
+        right: 20px;
+    }
+}
